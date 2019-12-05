@@ -9,7 +9,7 @@ variable "path" {
   default     = "/"
 }
 
-variable "policy_arn" {
-  description = "The ARN of the policy you want to apply to the group"
-  type        = string
+variable "policy_arns" {
+  description = "Policy ARN(s) you want to apply to the group"
+  type        = list
 }
